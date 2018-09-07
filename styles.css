@@ -45,6 +45,9 @@ flex: 1;
 }
 
 
+
+
+
 .bio{
   display: flex;
   flex-direction: row;
@@ -75,10 +78,34 @@ flex: 1;
 }
 
 
+
+
+
 .github{
   background-color: #1E1E1E;
-
+  display: flex;
+  flex-direction:row;
 }
+
+.gitbox{
+  border: black solid;
+  background-color: white;
+  flex: 2;
+  margin: 10px;
+  padding: 20px;
+  font-size: 2vw;
+}
+
+.git-img{
+  border-radius: 50%;
+  flex: 1;
+  align-self: center;
+  min-height: auto;
+  width: 5vh;
+  margin: 15px;
+}
+
+
 
 
 .contact{
