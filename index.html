@@ -7,25 +7,31 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Layout 2</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
 </head>
 
 <body>
-  <div class="navbar">
-    <nav>
-      navigation
-    </nav>
-  </div>
+
   <div class="content">
+      <nav class="navbar">
+        <div class="bio-button-box button">
+          <a href="#bio">About Me</a>
+        </div><div class="github-button-box button">
+          <a href="#github">My Work</a>
+        </div>
+        <div class="contact-button-box button">
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
   <div class="image-panel">
-    <img class ="placeholder-img" src="images/traintracks.jpg"/>
   </div>
 
 
 
   <div class="panel bio">
-    <img class="portrait" src="images/img_avatar.png">
+    <img class="portrait" src="images/profile.jpg">
 
-  <div class="biobox">
+  <div class="biobox" id="bio">
     <h3 class="biotext">
       Hi, I'm Dan.
     </h3>
@@ -40,17 +46,17 @@
 </div>
 
 
-  <div class="panel github">
+  <div class="panel github" id="github">
     <div class="gitbox">
       <h3>See my work on github</h3>
     </div>
     <img class="git-img" src="images/github-preview.gif" />
   </div>
-  <div>
-    <img class="placeholder-img-2" src="images/moon.jpg"
+  <div class="image-panel-2">
   </div>
-  <div class="panel contact">
-    contact
+
+  <div class="panel contact" id="contact">
+    <i class="fas fa-at"></i>
   </div>
     </div>
 
