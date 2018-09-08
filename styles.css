@@ -125,6 +125,9 @@ flex: 1;
   margin: 10px;
   padding: 20px;
   font-size: 2vw;
+  display: flex;
+  flex-direction: row;
+
 }
 
 .git-img{
@@ -134,6 +137,15 @@ flex: 1;
   min-height: auto;
   width: 5vh;
   margin: 15px;
+}
+
+.gitlink{
+  flex: 1;
+  text-decoration: none;
+  size: 5vh;
+  align-self: center;
+  margin-left:10px;
+  font-size: 5em;
 }
 
 .image-panel-2{
