@@ -159,7 +159,7 @@ body {
 .image-panel-2{
   display:flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   flex: 1;
   background-image: url('images/white-bird.jpg');
   min-height: 50vh;
@@ -247,6 +247,11 @@ body {
     font-size: 1em;
   }
 
+  .landing-text{
+    font-size: 1.5em;
+    margin-top: 80px;
+  }
+
 }
 
 
@@ -289,7 +294,7 @@ body {
 
 
   .image-panel-2{
-    flex: 4;
+    flex: 2;
   }
 
   .contact{
@@ -306,6 +311,14 @@ body {
   }
 
   .biobox{
+    font-size: 2em;
+  }
+
+  .email{
+    font-size: 2em;
+  }
+
+  .phone{
     font-size: 2em;
   }
 
