@@ -6,7 +6,7 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex
 }
 
@@ -22,19 +22,21 @@ body {
 }
 
 .button{
-  border: white solid 3px;
   border-radius: 15%;
   padding: 10px;
+  box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.1);
 }
+
 
 .button-link{
   text-decoration: none;
-  color: white;
+  color: transparent;
+  text-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
 
 .image-panel{
   flex: 1;
-  background-image: url('images/profile-cloudy.jpg');
+  background-image: url('images/profile-cloudy-bigger.jpg');
   background-size: cover;
   background-position: right;
   min-height: 100vh;
@@ -45,9 +47,12 @@ body {
   margin-top: 120px;
   align-content: flex-start;
   margin-left: 20px;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: white;
-  font-size: 4.5vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+
+  color: transparent;
+  text-shadow: 0 0 2px rgba(0,0,0,0.5);
+
 }
 
 
@@ -70,6 +75,7 @@ body {
   flex-grow: 1;
   flex: 1;
   max-width: 100%;
+  background-color: #EAF2F4;
 
 }
 
@@ -100,7 +106,7 @@ body {
   flex: 2;
   margin: 10px;
   padding: 20px;
-  font-size: 2vw;
+  font-size: 1em;
 }
 
 .biotext{
@@ -167,7 +173,9 @@ body {
 
 .languages{
   display: flex;
+  flex-direction: column;
   flex-wrap:wrap;
+  align-items: center;
   border-top: black solid 1px;
   border-bottom: black solid 1px;
   background-color: white;
@@ -180,13 +188,10 @@ body {
 }
 
 .logo{
-  flex: 1
-  height: auto;
-  width: auto;
+  flex: 1;
+  font-size: 8em;
 
 }
-
-
 
 
 .contact{
@@ -203,7 +208,6 @@ body {
 }
 
 .fa-envelope{
-  flex: 1;
   align-self: center;
   margin-top: 15px;
   margin-bottom: 0px;
@@ -220,7 +224,7 @@ body {
   flex: 1;
   align-self: center;
   margin-top: 1em;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   font-size: 12vh;
 }
 
@@ -230,15 +234,35 @@ body {
   margin-top: 0px;
 }
 
+@media(orientation: landscape){
+  .navbar{
+    justify-content: flex-start;
+  }
 
+  .panel{
+    min-height: 100vh;
+  }
+
+  .biobox{
+    font-size: 1em;
+  }
+
+}
 
 
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  .landing-text{
+    font-size: 2em;
+  }
 
+  .biobox{
+    font-size: 1.5em;
+  }
 
 }
+
 
 /* Large devices (desktops, 960px and up)*/
 @media (min-width: 960px) {
@@ -273,9 +297,16 @@ body {
   }
 
 
-}
+  .landing-text{
+    font-size: 3em;
+  }
 
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
+  .github-button-box{
+    display: none;
+  }
+
+  .biobox{
+    font-size: 2em;
+  }
 
 }
